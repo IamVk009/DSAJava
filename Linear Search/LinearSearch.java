@@ -5,7 +5,7 @@ class LinearSearch{
         System.out.println(searchLinear1(arr, target));
     }
 
-//    Approach 1 : Using For Loop
+//  Approach 1 : Using For Loop
     static String searchLinear1(int [] arr, int target){
 
 //      Edge Case Condition
@@ -19,7 +19,7 @@ class LinearSearch{
         return "Element Not Found";
     }
 
-//    Approach 2 : Using For-Each Loop
+//  Approach 2 : Using For-Each Loop
     static String searchLinear2(int arr[], int target){
 
 //      Edge Case Condition
@@ -35,7 +35,7 @@ class LinearSearch{
         return "Element Not Found";
     }
 
-//    Approach 3 : Return true or false
+//  Approach 3 : Return true or false
     static boolean searchLinear3(int arr[], int target){
         for (int i : arr){
             if(i == target)
