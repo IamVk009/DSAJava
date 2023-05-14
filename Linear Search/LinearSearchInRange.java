@@ -2,10 +2,10 @@
 class LinearSearchInRange {
     public static void main(String[] args) {
         int arr[] = {12,23,34,45,56,67,78,89,90,100};
-        int target = 90;
+        int target = 56;
         int start = 0;
         int end = 9;
-        System.out.println(searchInRange1(arr, target, start, end));
+        System.out.println(searchInRange2(arr, target, start, end));
     }
 
 //  Approach 1 : Using For Loop
@@ -23,6 +23,10 @@ class LinearSearchInRange {
 
 //  Approach 2 : Using For-Each Loop
     static String searchInRange2(int arr[], int target, int start, int end){
+//      Edge Case Condition
+        if(arr.length == 0)
+            return "Invalid Array";
+
         int index = 0;
         for(int i : arr){
             if(index >= start && index <= end && target == i){
