@@ -57,7 +57,7 @@ class EvenDigitsInNumber{
                 i *= -1;
             if(i == 0)
                 continue;
-//          '(int)(Math.log10(number) + 1)' gives total digits in a number.
+//          '(int)(Math.log10(number) + 1)' gives total digits in a positive number.
             if(((int)Math.log10(i) + 1) % 2 == 0){
                 count++;
             }
