@@ -26,7 +26,7 @@ class CeilingOfNumber{
             if(target > nums[mid])
                 start = mid + 1;
         }
-//      After searching all the elements if condition 'start <= end' fails, then start will be the index of answer.
+//      After searching all the elements if condition 'start <= end' fails, then start will be the index of required nuber.
         return nums[start];
     }
 }
